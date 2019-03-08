@@ -1,0 +1,38 @@
+{
+  "name": "gitlab-markdown-index",
+  "version": "1.0.0",
+  "description": "gitlab文档目录自动生成工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "./index.js server.wiki > server.wiki/index.md"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iphpjs/gitlab-markdown-index.git"
+  },
+  "keywords": [
+    "gitlab",
+    "table",
+    "markdown",
+    "toc",
+    "document-index",
+    "documentation",
+    "README",
+    "index"
+  ],
+  "author": "NetworkRanger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iphpjs/gitlab-markdown-index/issues"
+  },
+  "homepage": "https://github.com/iphpjs/gitlab-markdown-index#readme",
+  "dependencies": {
+    "glob": "~3.2.7",
+    "inflection": "^1.8.0",
+    "markdown-toc": "~0.12.12"
+  },
+  "bin": "./index.js"
+}
