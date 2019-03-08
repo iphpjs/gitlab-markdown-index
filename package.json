@@ -31,7 +31,6 @@
   "homepage": "https://github.com/iphpjs/gitlab-markdown-index#readme",
   "dependencies": {
     "glob": "~3.2.7",
-    "inflection": "^1.8.0",
     "markdown-toc": "~0.12.12"
   },
   "bin": "./index.js"
