@@ -19,6 +19,27 @@ npm install -g gitlab-markdown-index
 markdown-index directory/fulla/markdowns > index.md
 ```
 
+## git集成
+
+客户端pre-commit钩子
+
+```bash
+vim .git/hooks/pre-commit
+
+echo '生成index.md开始...'
+gitlab-markdown-index . > index.md
+git add index.md
+echo '生成index.md结束...'
+```
+
+或服务器端post-update钩子
+```bash
+vim .git/hooks/post-update
+
+gitlab-markdown-index . > index.md
+```
+
+
 ## 协议
 
 MIT
